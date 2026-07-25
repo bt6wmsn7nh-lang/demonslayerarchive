@@ -1,4 +1,15 @@
-node_modules/
-.env
-.DS_Store
-npm-debug.log*
+{
+  "name": "demon-slayer-archive",
+  "version": "1.0.0",
+  "description": "Demon Slayer Archive website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
