@@ -1,0 +1,19 @@
+# Demon Slayer Archive — Render Deployment
+
+## Files
+- `public/index.html` — the complete website
+- `server.js` — Express server for Render
+- `package.json` — Node dependencies and start command
+- `render.yaml` — Render Blueprint configuration
+
+## Deploy to Render
+1. Upload this folder to a GitHub repository.
+2. In Render, choose **New +** → **Blueprint**.
+3. Connect the repository.
+4. Render reads `render.yaml` and creates the web service.
+
+You may also choose **New +** → **Web Service** and set:
+- Build command: `npm install`
+- Start command: `npm start`
+
+The server automatically uses Render's `PORT` environment variable.
